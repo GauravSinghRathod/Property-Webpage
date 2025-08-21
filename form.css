@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.logo img{
+    height: 60px;
+    width: 100px;
+     border-radius: 100px;
+}
+
+.navbar{
+    background-color: lightcoral;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10px;
+    flex-wrap: wrap;
+    
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+     gap: 16px
+}
+
+
+.nav-links li a{
+  text-decoration: none;
+   font-weight: 550;
+   color: #FFFFFF;
+   transition: 0.3s;
+   flex-wrap: wrap;
+}
+  .navbar input[type="text"] {
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+
+}
+
+.nav-links li a:hover{
+    color:#FFD700;
+
+}
+/* Login/ Register */
+.container {
+    
+       max-width: 400px;
+      margin: 0 auto;
+      background-color: whitesmoke;
+      padding: 30px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .container button {
+      width: 100%;
+      padding: 10px;
+      background-color: lightcoral;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+.container button:hover {
+      background-color: #d86c6c;
+    }
+
+    .container .link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .container .link a {
+      color: #4534db; 
+      text-decoration: none;
+    }
+
+    .container .link a:hover {
+      text-decoration: underline;
+     color:   #35218c; 
+    }

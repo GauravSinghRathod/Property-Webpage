@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property-Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo">
+            <img src="https://thumbs.dreamstime.com/b/creative-logo-design-depicting-modern-house-encircled-stylish-abstract-circular-element-ideal-real-estate-property-380190949.jpg" alt="logo">
+        </div>
+        <div>
+            <nav>
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li> <input type="text" placeholder="Search 🔍"/></li>
+             <li><a href="upload.html">Upload</a></li>
+             <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+           </ul>
+           </nav>
+        </div>
+        </div>
+    </header>
+
+    <main>
+    <section>
+        <div class="upload-container">
+  <h2>Upload Property</h2>
+
+  <form action="/submit-property" method="post" enctype="multipart/form-data">
+    <label for="title">Property Title</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <label for="price">Price / Rent</label>
+    <input type="number" id="price" name="price" required>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location" required>
+
+    <label for="type">Property Type</label>
+    <select id="type" name="type" required>
+      <option value="">Select</option>
+      <option value="apartment">Apartment</option>
+      <option value="house">House</option>
+      <option value="studio">Studio</option>
+    </select>
+
+    <label for="image">Upload Images</label>
+    <input type="file" id="image" name="image[]" multiple required>
+
+    <button class="btn">Submit Property</button>
+  </form>
+</div>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <h3> Connect With US</h3>
+        <p>Contact us:+91 1234567891</p>
+         <p><a href="#">terms & conditions | privacy  </a></p>
+    <p>&copy; 2025  Find Your Home| All rights reserved.</p>
+    </footer>
+</body>
+</html>
