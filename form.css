@@ -20,8 +20,18 @@
     align-items: center;
     padding: 4px 10px;
     flex-wrap: wrap;
-    
+    position: fixed;          /* Fixed position */
+    top: 0;                   /*  Stick to the top */
+    left: 0;
+    width: 100%;            
+    z-index: 1000;            /* On top of other elements */
 }
+
+body {
+    padding-top: 90px;         /* ✅ Add top padding equal to navbar height */
+}
+    
+
 
 .nav-links{
     display: flex;
